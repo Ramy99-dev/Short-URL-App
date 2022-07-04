@@ -1,0 +1,21 @@
+<hr>
+<table>
+   
+    <thead>
+      <tr>
+        <th scope="col">Long Url</th>
+        <th scope="col">Short Url</th>
+        <th scope="col">Visits</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let url of urls , let i = index">
+        <td>{{url.longUrl}}</td>
+        <td>{{url.shortUrl}}</td>
+        <td>{{url.visits}}</td>
+        <td><button (click)="delete(url._id ,i )">🗑️</button></td>
+      </tr>
+      
+    </tbody>
+  </table>

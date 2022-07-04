@@ -1,0 +1,58 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background : url("../../assets/images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    
+
+
+}
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;   
+    background: rgba(255, 255, 255, 0.2) ; 
+    backdrop-filter: blur(8px);
+    padding:25px;
+    border-radius: 20px;
+}
+
+input{
+    width:190px;
+    height: 20px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.btn{
+    display: flex;
+    justify-content: center;  
+    margin-top: 10px;  
+    button{
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        background-color: aquamarine;
+        border: none;
+        padding:5px 20px;
+    }
+}
+small{
+    color:red;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.ng-touched .ng-invalid:not(form){
+    border:1px solid red;
+}

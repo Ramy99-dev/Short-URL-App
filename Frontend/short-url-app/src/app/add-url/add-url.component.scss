@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+}
+input{
+    width: 400px;
+    height: 35px;
+    padding-left: 10px;
+}
+button{
+    background: green;
+    color:white;
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+    padding: 5px 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+}
+
+.result{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: rgb(30, 63, 30);
+    color:white;
+    padding: 10px 40px;   
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+small{
+    color:red;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="login-container">
+        <small>{{errMsg}}</small>
+      <form [formGroup]="loginForm" (submit)="login()">
+          <div class="form-field">
+              <label>Email</label>
+              <input type="text" formControlName="email">
+          </div>
+  
+          <div class="form-field">
+              <label>Password</label>
+              <input type="password" formControlName="password">
+          </div>
+          <div class="btn">
+              <button [disabled]="loginForm.invalid">Login</button>
+          </div>
+          <div class="no-account">No account ? <a routerLink='/register'>create one</a></div>
+      </form>
+
+
+    </div>
+</div>

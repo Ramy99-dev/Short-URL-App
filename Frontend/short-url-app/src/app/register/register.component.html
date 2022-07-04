@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="register-container">
+        <small>{{errMsg}}</small>
+        <form [formGroup]="registerForm" (submit)="register()" >
+            <div class="form-field">
+                <label>Email</label>
+                <input type="text" formControlName="email">
+            </div>
+
+            <div class="form-field">
+                <label>Password</label>
+                <input type="password" formControlName="password">
+            </div>
+
+            <div class="form-field">
+                <label>Confirm Password</label>
+                <input type="password" formControlName="confirmPassword">
+            </div>
+            <div *ngIf="passwordMatchError">
+                <small>Password does not match</small>
+            </div>
+            <div class="btn">
+                <button [disabled]="registerForm.invalid">Register</button>
+            </div>
+
+        </form>
+
+
+    </div>
+</div>

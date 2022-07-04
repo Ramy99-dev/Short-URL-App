@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>URL Shortener</h1>
+    <input #longUrl type="text" name="" id="">
+    <small>{{errMsg}}</small>
+    <button (click)="shortLink()">SHORTEN !</button>
+    
+    <div *ngIf="shortUrl != ''" class="result">
+        <a href={{shortUrl}}>{{shortUrl}}</a>
+    </div>
+</div>
